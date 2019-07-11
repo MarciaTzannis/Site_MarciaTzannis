@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="image/vespa3.png" type="image/x-png">
+
+    <title>Márcia Tzannis</title>
+</head>
+
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="paginaPortfolio">
+
+        <div class="iconeEsquerda">
+            <div class="glyphicon">
+                <a href="skill.html"><span onmouseover="mouseover()" onmouseout="mouseout()"
+                        class="glyphicon glyphicon-menu-left" id="skills"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="iconeDireita">
+            <div class="glyphicon">
+                <a href="contato.html">
+                    <span class="texto-dir" id="contato"></span>
+                    <span onmouseover="mouseoverDireita()" onmouseout="mouseoutDireita()"
+                        class="glyphicon glyphicon-menu-right">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="container-fluid col-lg-8">
+
+
+    </div>
+
+
+
+    <div class="vespa">
+        <img src="image/vespa1.png" alt="vespa">
+    </div>
+
+    <script>
+        function mouseover() {
+            document.querySelector('#skills').innerHTML = 'Skills';
+        }
+
+        function mouseout() {
+            document.querySelector('#skills').innerHTML = '';
+        }
+
+        function mouseoverDireita() {
+            document.querySelector('#contato').innerHTML = 'Contato';
+        }
+
+        function mouseoutDireita() {
+            document.querySelector('#contato').innerHTML = '';
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tootik/1.0.2/css/tootik.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
+
+</body>
+
+</html>
