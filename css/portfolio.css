@@ -13,6 +13,7 @@ body {
 .iconeEsquerda {
     float: left !important;
     margin-left: 20px;
+    padding: 0;
 }
 
 .iconeDireita {
@@ -24,6 +25,21 @@ body {
     margin-top: 130px;
     color: #2e2e2e;
     font-size: 1.7em;
+}
+
+/* Configuração botões JS */
+a {
+  text-decoration: none !important;
+}
+
+.texto-dir {
+  font-size: 1.2em;
+  color: #2e2e2e;
+}
+
+.texto-esq {
+  font-size: 1.2em;
+  color: #2e2e2e;
 }
 
 /* Vespa */
@@ -204,19 +220,15 @@ body {
   }
   
   .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: #2e2e2e;
+    /* color: #2e2e2e;
     background-color:#f2f2f2;
     width: 100%;
     padding: 10px;
-    display: block;
+    display: block; */
+    text-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de;
   }
 
-  a {
-      text-decoration: none !important;
-  }
-
-  .texto-dir {
-      font-size: 1em;
-  }
+ 
+ 
   
   

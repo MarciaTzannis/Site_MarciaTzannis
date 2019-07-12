@@ -33,14 +33,29 @@ body {
     padding: 0;
 }
 
-.glyphicon {
-    float: right !important;
-    margin-top: 130px;
-    margin-right: 20px;
-    color: #2e2e2e;
-    font-size: 1.7em;
+.iconeDireita {
+  float: right !important;
+  margin-right: 20px;
 }
 
+.glyphicon {
+  margin-top: 130px;
+  color: #2e2e2e;
+  font-size: 1.7em;
+}
+
+/* Configuração botões JS */
+a {
+  text-decoration: none !important;
+}
+
+.texto-dir {
+  font-size: 1.2em;
+  color: #2e2e2e;
+}
+
+
+/* Configuração botões Redes Sociais */
 .zoom1 {
     /* transition: transform .2s; */
     -webkit-transition: all 0.7s ease;
@@ -276,7 +291,11 @@ ul {
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  color: #2e2e2e;
-  background-color:#f2f2f2;
+  /* color: #2e2e2e;
+    background-color:#f2f2f2;
+    width: 100%;
+    padding: 10px;
+    display: block; */
+    text-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de; 
 }
 
