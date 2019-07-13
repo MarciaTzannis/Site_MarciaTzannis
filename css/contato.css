@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative; /* criamos um contexto para posicionamento */
+  min-height: 100vh;
 }
 
 .banner {
@@ -28,7 +29,10 @@ body {
   float: left !important;
   margin-left: 20px;
   padding: 0;
+  position: relative;
+  z-index: 3;
 }
+
 
 .glyphicon {
   margin-top: 130px;
@@ -59,7 +63,9 @@ h1 {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .fotoVespa img{
@@ -110,8 +116,7 @@ h1 {
 .btn-primary:hover{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  background: #A4A4A4;
-  color: black;
+  background: #3e64a6;
   border: none;
   border-radius: 15px;
   width:100px;
