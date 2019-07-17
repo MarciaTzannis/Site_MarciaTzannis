@@ -68,22 +68,21 @@
 
         <div class="formularioContato" id="contato">
             <div class="col-md-6">
-                <form>
+                <form class="form" method="post" action="enviarEmail.php">
                     <h1>Contato</h1>
                     <div class=" form-group">
                         <label for="exampleInputNome">Nome</label>
-                        <input type="text" class="form-control" id="nomeFormulario" placeholder="">
+                        <input type="text" name="nome" class="form-control" placeholder="">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail">Email</label>
-                        <input type="text" class="form-control" id="emailFormulario" placeholder="">
+                        <input type="text" name="email" class="form-control" placeholder="">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputMensagem">Mensagem</label>
-                        <textarea class="form-control" id="mensagemFormulario" type="text" rows="4" cols="50"
-                            name="comment" form="usrform" placeholder=""></textarea>
+                        <textarea class="form-control" name="mensagem" rows="4" cols="50" placeholder=""></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" value="Enviar" class="btn btn-primary">Enviar</button>
                 </form>
 
                 <div class="follow_me">
