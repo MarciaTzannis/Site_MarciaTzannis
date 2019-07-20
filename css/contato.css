@@ -1,12 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2F2F2 !important;
-    color: #2e2e2e!important;
-    font-family: "DM Serif Display" !important;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2 !important;
+  color: #2e2e2e !important;
+  font-family: "DM Serif Display" !important;
 }
 
-.paginaContato{
+.paginaContato {
   overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
   width: 100%;
   height: 100%;
@@ -33,7 +33,6 @@ body {
   z-index: 3;
 }
 
-
 .glyphicon {
   margin-top: 130px;
   color: #f2f2f2;
@@ -42,13 +41,12 @@ body {
 
 /* Configuração botões JS */
 a {
-text-decoration: none !important;
+  text-decoration: none !important;
 }
 
-
 .texto-esq {
-font-size: 1.2em;
-color: #f2f2f2;
+  font-size: 1.2em;
+  color: #f2f2f2;
 }
 
 /* Box Contato */
@@ -56,7 +54,7 @@ h1 {
   color: #2e2e2e;
   font-style: italic;
   margin-left: 220px;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .formularioContato {
@@ -68,7 +66,43 @@ h1 {
   min-height: 100vh;
 }
 
-.fotoVespa img{
+.colcheteEsquerdo_nome {
+  width: 10px;
+  margin-left: -5px;
+  margin-top: -55px;
+}
+
+.colcheteDireito_nome {
+  width: 10px;
+  margin-left: 340px;
+  margin-top: -55px;
+}
+
+.colcheteEsquerdo_email {
+  width: 10px;
+  margin-left: -5px;
+  margin-top: -55px;
+}
+
+.colcheteDireito_email {
+  width: 10px;
+  margin-left: 340px;
+  margin-top: -55px;
+}
+
+.colcheteEsquerdo_mensagem {
+  width: 10px;
+  margin-left: -5px;
+  margin-top: -110px;
+}
+
+.colcheteDireita_mensagem {
+  width: 10px;
+  margin-left: 340px;
+  margin-top: -110px;
+}
+
+.fotoVespa img {
   width: 300px;
 }
 
@@ -87,41 +121,40 @@ h1 {
   margin-left: 40px;
 }
 
-
 .form-group label {
   display: flex !important;
   justify-content: flex-start !important;
   font-size: 20px;
   color: #2e2e2e;
-  margin-top: 0;
-
+  margin-top: -10px;
 }
 
 .form-control {
-  /* border: none; */
-  background: #F2F2F2;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background: white;
   width: 90%;
 }
 
-.btn-primary{
-  font-family: 'Montserrat', sans-serif;
+.btn-primary {
+  font-family: "Montserrat", sans-serif;
   background: black;
   border: none;
   border-radius: 15px;
-  width:100px;
+  width: 100px;
   margin-left: 160px;
-  margin-top: 10px;
+  margin-top: -25px;
 }
 
-.btn-primary:hover{
-  font-family: 'Montserrat', sans-serif;
+.btn-primary:hover {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background: #3e64a6;
   border: none;
   border-radius: 15px;
-  width:100px;
+  width: 100px;
 }
-
 
 /* Ícones Redes Sociais */
 .follow_me {
@@ -133,11 +166,9 @@ h1 {
   padding: 0;
 }
 
-
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
-
 
 ul li img {
   width: 120px;
@@ -145,47 +176,47 @@ ul li img {
 }
 
 .zoom1 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom1:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom2 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom2:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom3 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom3:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom4 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom4:hover {
-    /* transform: scale(1.1); */
-    filter: brightness(180%);
+  /* transform: scale(1.1); */
+  filter: brightness(180%);
 }
 
 .zoom5 {
@@ -199,7 +230,6 @@ ul li img {
   filter: brightness(180%);
 }
 
-
 /* Confirguração Menu Hamburguer
 /* CORE STYLES */
 :root {
@@ -212,8 +242,8 @@ ul li img {
 .menu-wrap {
   position: fixed;
   top: 15px;
-  right:70px;
-  z-index: 1;
+  right: 70px;
+  z-index: 100;
 }
 
 .menu-wrap .toggler {
@@ -239,7 +269,7 @@ ul li img {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
 /* Hamburger Line */
 .menu-wrap .hamburger > div {
@@ -254,11 +284,10 @@ ul li img {
   transition: all 0.4s ease;
 }
 
-
 /* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -268,7 +297,7 @@ ul li img {
 }
 
 /* Moves Line Down */
-.menu-wrap .hamburger > div::after {  
+.menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
@@ -301,7 +330,7 @@ ul li img {
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
@@ -331,28 +360,179 @@ ul li img {
 }
 
 .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #f2f2f2;
-    font-size: 1.5rem;
-    padding: 1rem;
+  list-style: none;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-    font-family: "DM Serif Display" !important;
-    font-size: 40px;
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-}  
+  font-family: "DM Serif Display" !important;
+  font-size: 40px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-  text-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de;
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+}
+
+/* iPhone 6, 7, & 8 in portrait & landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  body {
+    background-color: #f2f2f2 !important;
+    color: #2e2e2e !important;
+    font-family: "DM Serif Display" !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iconeEsquerda {
+    display: none;
+  }
+
+  .col-md-6 {
+    width: 300px;
+    margin-top: -70px;
+  }
+
+  .follow_me {
+    position: absolute;
+    top: 18px;
+    width: 320px;
+  }
+
+  .follow_me ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 440px;
+  }
+
+  .follow_me ul li a img {
+    width: 120px;
+  }
+
+  ul {
+    display: inline-flex;
+  }
+
+  h1 {
+    margin-left: 100px;
+    margin-top: 0;
+  }
+
+  .form-group {
+    margin-left: 20px;
+    width: 280px;
+    padding: 5px 0;
+  }
+
+  .colcheteDireito_nome {
+    width: 10px;
+    margin-left: 245px;
+    margin-top: -55px;
+  }
+
+  .colcheteDireito_email {
+    width: 10px;
+    margin-left: 245px;
+    margin-top: -55px;
+  }
+
+  .colcheteDireita_mensagem {
+    width: 10px;
+    margin-left: 245px;
+    margin-top: -110px;
+  }
+
+  .btn-primary {
+    font-family: "Montserrat", sans-serif;
+    background: black;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 105px;
+    margin-top: -25px;
+  }
+
+  .paginaContato {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+    min-height: 100vh;
+  }
+
+  .banner {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner img {
+    width: 330%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    height: 120vh;
+  }
+
+  .menu-wrap .hamburger > div {
+    margin-top: -10px;
+    margin-right: -18px;
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  }
+}
+
+/* Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .paginaContato {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+    min-height: 100vh;
+  }
+
+  .banner {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner img {
+    width: 220%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+  }
+
+  .iconeEsquerda {
+    display: none;
+  }
 }

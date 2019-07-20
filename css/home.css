@@ -1,36 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2F2F2 !important;
-    color: #2e2e2e!important;
-    height: 100%;
-    width: 100%;
-    font-family: "DM Serif Display" !important;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2 !important;
+  color: #2e2e2e !important;
+  height: 100%;
+  width: 100%;
+  font-family: "DM Serif Display" !important;
 }
-
 
 /* Texto Typewriter */
 .me h2 {
-    text-align: center;
-    margin-top: 120px !important;
-    padding: 0px;
+  text-align: center;
+  margin-top: 120px !important;
+  padding: 0px;
 }
 
 .me p {
-    font-size: 24px;
-    text-align: center;
-    margin: 0 0px;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0px;
 }
 
 /* Ícones Redes Sociais */
 .follow_me {
-    position: fixed;
-    top: calc(50% - (275px / 2));
-    width: 63px;
-    height: 275px;
-    padding: 0;
+  position: fixed;
+  top: calc(50% - (275px / 2));
+  width: 63px;
+  height: 275px;
+  padding: 0;
+}
+
+a {
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  margin: 2px;
+  margin-inline-start: -30px;
 }
 
 .iconeDireita {
@@ -54,85 +64,70 @@ a {
   color: #2e2e2e;
 }
 
-
 /* Configuração botões Redes Sociais */
 .zoom1 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom1:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom2 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom2:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom3 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom3:hover {
-    /* transform: scale(1.1); */
-    -webkit-filter: saturate(4);
+  /* transform: scale(1.1); */
+  -webkit-filter: saturate(4);
 }
 
 .zoom4 {
-    /* transition: transform .2s; */
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+  /* transition: transform .2s; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .zoom4:hover {
-    /* transform: scale(1.1); */
-    filter: brightness(180%);
+  /* transform: scale(1.1); */
+  filter: brightness(180%);
 }
-
-
-a {
-    border: 0;
-}
-
-ul {
-    list-style-type: none;
-    display: block;
-    margin: 2px;
-    margin-inline-start: -30px;
-}
-
 
 /* Vespa */
 .vespa img {
-    height: 23vh;
-    position: absolute;
-    bottom: 20px;
-    animation: mymove 30s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+  height: 20vh;
+  position: absolute;
+  bottom: 20px;
+  animation: mymove 30s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
-
 
 /* Função animação Vespa */
 @-webkit-keyframes mymove {
-    from {
-        left: 2em;
-    }
+  from {
+    left: 2em;
+  }
 
-    to {
-        left: 79em;
-    }
+  to {
+    left: 79em;
+  }
 }
 
 /* Confirguração Menu Hamburguer */
@@ -147,8 +142,8 @@ ul {
 .menu-wrap {
   position: fixed;
   top: 15px;
-  right:70px;
-  z-index: 1;
+  right: 70px;
+  z-index: 100;
 }
 
 .menu-wrap .toggler {
@@ -189,13 +184,13 @@ ul {
 }
 
 .toggler:checked + .hamburger > div {
-  background: #f2f2f2
+  background: #f2f2f2;
 }
 
 /* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -205,7 +200,7 @@ ul {
 }
 
 /* Moves Line Down */
-.menu-wrap .hamburger > div::after {  
+.menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
@@ -238,7 +233,7 @@ ul {
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
@@ -268,26 +263,26 @@ ul {
 }
 
 .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #f2f2f2;
-    font-size: 1.5rem;
-    padding: 1rem;
+  list-style: none;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-    font-family: "DM Serif Display" !important;
-    font-size: 40px;
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
+  font-family: "DM Serif Display" !important;
+  font-size: 40px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
@@ -296,6 +291,135 @@ ul {
     width: 100%;
     padding: 10px;
     display: block; */
-    text-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de; 
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
 }
 
+/* iPhone 6, 7, & 8 in portrait & landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .me h2 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+
+  .me p {
+    font-size: 22px;
+  }
+
+  .iconeDireita {
+    display: none;
+  }
+
+  .follow_me {
+    position: absolute;
+    top: 18px;
+  }
+
+  .follow_me ul li a img {
+    width: 40px;
+  }
+
+  ul {
+    display: inline-flex;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    height: 120vh;
+  }
+
+  .menu-wrap .hamburger > div {
+    margin-top: -10px;
+    margin-right: -18px;
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  }
+
+  .vespa img {
+    height: 13vh;
+    position: fixed;
+    bottom: 20px;
+    animation: mymove 20s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes mymove {
+    from {
+      left: 1em;
+    }
+
+    to {
+      left: 18em;
+    }
+  }
+}
+
+/* Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-fluid {
+    margin-top: 30px !important;
+    margin-left: 70px !important;
+    margin-right: 20px !important;
+  }
+
+  .me h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .me p {
+    font-size: 38px;
+  }
+
+  .follow_me {
+    position: fixed;
+    top: calc(50% - (275px / 2));
+    width: 63px;
+    height: 275px;
+    padding: 0;
+  }
+
+  .follow_me ul li a img {
+    width: 60px;
+  }
+
+  .iconeDireita {
+    display: none;
+  }
+
+  .vespa img {
+    height: 15vh;
+    position: fixed;
+    bottom: 20px;
+    animation: mymove 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes mymove {
+    from {
+      left: 1em;
+    }
+
+    to {
+      left: 40em;
+    }
+  }
+}

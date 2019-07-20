@@ -1,27 +1,27 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2F2F2 !important;
-    color: #2e2e2e!important;
-    font-family: 'DM Serif Display' !important;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2 !important;
+  color: #2e2e2e !important;
+  font-family: "DM Serif Display" !important;
 }
 
-.paginaKills{
-    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
-    width: 100%;
-    height: 100%;
-    position: relative; /* criamos um contexto para posicionamento */
+.paginaKills {
+  overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+  width: 100%;
+  height: 100%;
+  position: fixed; /* criamos um contexto para posicionamento */
 }
 
 .banner {
-    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
-    width: 100%;
-    height: 100%;
+  position: absolute; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+  width: 100%;
+  height: 100%;
 }
- 
+
 .banner img {
-    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
-    position: absolute;
+  width: 100%; /*com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+  position: absolute;
 }
 
 .iconeEsquerda {
@@ -43,206 +43,316 @@ body {
 
 /* Configuração botões JS */
 a {
-text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .texto-dir {
-font-size: 1.2em;
-color: #2e2e2e;
+  font-size: 1.2em;
+  color: #2e2e2e;
 }
 
 .texto-esq {
-font-size: 1.2em;
-color: #2e2e2e;
+  font-size: 1.2em;
+  color: #2e2e2e;
 }
-
 
 /* Vespa */
 .vespa img {
-    height: 23vh;
-    position: absolute;
-    bottom: 20px;
-    animation: mymove 10s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+  height: 20vh;
+  position: absolute;
+  bottom: 20px;
+  animation: mymove 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
-
-
 
 /* Função animação Vespa */
 @-webkit-keyframes mymove {
-    from {
-        left: 2em;
-    }
+  from {
+    left: 2em;
+  }
 
-    to {
-        left: 79em;
-    }
+  to {
+    left: 79em;
+  }
 }
 
 /* Confirguração Menu Hamburguer */
 /* CORE STYLES */
 :root {
-    --primary-color: #f2f2f2;
-    --overlay-color: #2e2e2e;
-    --menu-speed: 0.75s;
-  }
-  
-  /* MENU STYLES */
-  .menu-wrap {
-    position: fixed;
-    top: 15px;
-    right:70px;
-    z-index: 1;
-  }
-  
-  .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-  }
-  
-  .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Hamburger Line */
-  .menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #2e2e2e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-  }
+  --primary-color: #f2f2f2;
+  --overlay-color: #2e2e2e;
+  --menu-speed: 0.75s;
+}
 
-  .toggler:checked + .hamburger > div {
-    background: #f2f2f2
-  }
-  
-  /* Hamburger Lines - Top & Bottom */
-  .menu-wrap .hamburger > div::before,
-  .menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-  }
-  
-  /* Moves Line Down */
-  .menu-wrap .hamburger > div::after {  
-    top: 10px;
-  }
-  
-  /* Toggler Animation */
-  .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-  
-  /* Turns Lines Into X */
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  
-  /* Rotate On Hover When Checked */
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
-  
-  /* Show Menu */
-  .menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-  }
-  
-  .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-wrap .menu > div {
-    background: var(--overlay-color);
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div {
-      text-align: center;
-      max-width: 90vw;
-      max-height: 100vh;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li {
-      list-style: none;
-      color: #f2f2f2;
-      font-size: 1.5rem;
-      padding: 1rem;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li > a {
-      font-family: "DM Serif Display" !important;
-      font-size: 40px;
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li > a:hover {
-    /* color: #2e2e2e;
+/* MENU STYLES */
+.menu-wrap {
+  position: fixed;
+  top: 15px;
+  right: 70px;
+  z-index: 100;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.toggler:checked + .hamburger > div {
+  background: #f2f2f2;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  font-family: "DM Serif Display" !important;
+  font-size: 40px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+  /* color: #2e2e2e;
     background-color:#f2f2f2;
     width: 100%;
     padding: 10px;
     display: block; */
-    text-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de;
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+}
+
+/* iPhone 6, 7, & 8 in portrait & landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  body {
+    background-color: #f2f2f2 !important;
+    color: #2e2e2e !important;
+    font-family: "DM Serif Display" !important;
+    width: 100%;
+    height: 100%;
+    background: url(../image/skills_iphone.png) !important;
+    z-index: 100;
   }
 
-  
-  
+  .banner {
+    position: absolute; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .iconeEsquerda {
+    display: none;
+  }
+
+  .iconeDireita {
+    display: none;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    height: 120vh;
+  }
+
+  .menu-wrap .hamburger > div {
+    margin-top: -10px;
+    margin-right: -18px;
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  }
+
+  .vespa img {
+    height: 13vh;
+    position: fixed;
+    bottom: 20px;
+    animation: mymove 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes mymove {
+    from {
+      left: 1em;
+    }
+
+    to {
+      left: 18em;
+    }
+  }
+}
+
+/* Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    width: 100%;
+    height: 100%;
+    background: url(../image/skills_ipad.png) no-repeat !important;
+    z-index: 100;
+  }
+
+  .banner {
+    position: absolute; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .iconeEsquerda {
+    display: none;
+  }
+
+  .iconeDireita {
+    display: none;
+  }
+
+  .vespa img {
+    height: 15vh;
+    position: fixed;
+    bottom: 20px;
+    animation: mymove 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes mymove {
+    from {
+      left: 1em;
+    }
+
+    to {
+      left: 40em;
+    }
+  }
+}
